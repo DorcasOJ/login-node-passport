@@ -1,0 +1,44 @@
+<form method="post">
+  <div>
+    {{#if error}}
+      <p class="err-msg">Username already eist</p>
+    {{/if}}
+    <h1>Register</h1>
+  </div>
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input
+      type="text"
+      name="username"
+      id="username"
+      placeholder="Enter your username"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="Enter your email"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="password">password</label>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      placeholder="Enter your password"
+      required
+    />
+  </div>
+  <div>
+    <input type="submit" value="Register" />
+  </div>
+  <div>
+    <a href="/login">Login here</a>
+  </div>
+</form>
